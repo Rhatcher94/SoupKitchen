@@ -1,0 +1,284 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+  background-color: #6A50A7;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrapper.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-wrapper.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-wrapper.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-wrapper.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-wrapper.space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-wrapper.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-wrapper.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-wrapper.secondary-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrapper.full-height {
+  height: 100%;
+}
+
+.flex-wrapper.full-width {
+  width: 100%;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-wrapper.col-num-1 {
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.grid-wrapper.col-num-2 {
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.grid-wrapper.col-num-3 {
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.grid-wrapper.col-num-4 {
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.grid-wrapper.col-num-5 {
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-wrapper.col-num-6 {
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-wrapper.col-num-7 {
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-wrapper.col-num-8 {
+  -ms-grid-columns: auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.grid-wrapper.col-gap-p2 {
+  grid-column-gap: 0.2em;
+}
+
+.grid-wrapper.col-gap-p5 {
+  grid-column-gap: 0.5em;
+}
+
+.grid-wrapper.col-gap-1 {
+  grid-column-gap: 1em;
+}
+
+.grid-wrapper.col-gap-2 {
+  grid-column-gap: 2em;
+}
+
+.grid-wrapper.col-gap-3 {
+  grid-column-gap: 3em;
+}
+
+.grid-wrapper.row-gap-p2 {
+  grid-row-gap: 0.2em;
+}
+
+.grid-wrapper.row-gap-p5 {
+  grid-row-gap: 0.5em;
+}
+
+.grid-wrapper.row-gap-1 {
+  grid-row-gap: 1em;
+}
+
+.grid-wrapper.row-gap-2 {
+  grid-row-gap: 2em;
+}
+
+.grid-wrapper.row-gap-3 {
+  grid-row-gap: 3em;
+}
+
+.grid-heading {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.grid-cell {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.login-form {
+  color: #6A50A7;
+  background-color: #C4B9DE;
+}
+
+.login-form.title {
+  font-size: 1.3em;
+}
+
+.login-form.lbl {
+  font-size: 1.2em;
+  width: 6em;
+}
+
+.login-form.ipt {
+  font-size: 1.2em;
+  width: 10em;
+  padding-left: 0.5em;
+  background-color: #D9D6E2;
+  border: solid 2px #C4B9DE;
+}
+
+.login-form.ipt:hover {
+  background-color: #E8E6ED;
+}
+
+.login-form.ipt:focus {
+  background-color: #E8E6ED;
+  outline: solid 2px #8F7AC1;
+}
+
+.login-form.btn {
+  font-size: 1em;
+  font-weight: 500;
+  color: #E8E6ED;
+  background-color: #755BB1;
+  border: solid 1px #755BB1;
+  width: 5.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.login-form.btn:hover {
+  outline: solid 1px #4D3A78;
+  border: solid 1px #4D3A78;
+}
+
+.login-form.btn:focus {
+  outline: solid 1px #4D3A78;
+  border: solid 1px #4D3A78;
+}
+
+.login-form.btn:active {
+  outline: solid 1px #4D3A78;
+  border: solid 1px #4D3A78;
+}
+
+.login-form.window {
+  width: 25em;
+  height: 15em;
+}
+
+#nav {
+  padding: 0.2em;
+  height: 3em;
+}
+
+.nav-link {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  text-decoration: none;
+  background-color: #C4B9DE;
+  color: #6A50A7;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  border: #6A50A7 0.2em ridge;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+#view {
+  height: calc(100%-3em);
+  padding: 0.2em;
+  border-top: #4D3A78 solid 1px;
+  border-bottom: #4D3A78 solid 1px;
+}
+
+#list {
+  width: 100%;
+}
+
+#search {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#search label {
+  padding-right: 2em;
+  color: #C4B9DE;
+}
+
+#search input {
+  padding-right: 10em;
+  background-color: #E8E6ED;
+}
+/*# sourceMappingURL=style.css.map */

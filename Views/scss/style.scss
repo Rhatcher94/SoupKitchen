@@ -1,0 +1,230 @@
+$base-font-size:1em;
+$login-window-color:#C4B9DE;
+$login-window-font-color:#6A50A7;
+$login-input-box-color:#D9D6E2;
+$login-input-box-active-color:#E8E6ED;
+$login-input-box-border-color:#8F7AC1;
+$login-button-color:#755BB1;
+$login-button-font-color:#E8E6ED;
+$login-button-border-color:#4D3A78;
+$background-color: #6A50A7;
+
+html
+{
+    width:100%;
+    height:100%;
+}
+
+body
+{
+    font-size:$base-font-size;
+    width:100%;
+    height:100%;
+	background-color: $background-color;
+}
+
+.flex-wrapper
+{
+    display:flex;
+    &.col {
+        flex-direction: column;
+    }
+    &.row {
+        flex-direction: row;
+    }
+    &.center{
+        justify-content: center;
+    }
+    &.space-between{
+        justify-content: space-between;
+    }
+    &.space-around{
+        justify-content: space-around;
+    }
+    &.flex-start{
+        justify-content: flex-start;
+    }
+    &.flex-end{
+        justify-content: flex-end;
+    }
+    &.secondary-center{
+        align-items: center;
+    }
+    &.full-height{
+        height:100%;
+    }
+    &.full-width{
+        width:100%;
+    }
+}
+
+.grid-wrapper{
+    display:grid;
+    &.col-num-1{
+        grid-template-columns:auto;
+    }
+    &.col-num-2{
+        grid-template-columns:auto auto;
+    }
+    &.col-num-3{
+        grid-template-columns:auto auto auto;
+    }
+    &.col-num-4{
+        grid-template-columns:auto auto auto auto;
+    }
+    &.col-num-5{
+        grid-template-columns:auto auto auto auto auto;
+    }
+    &.col-num-6{
+        grid-template-columns:auto auto auto auto auto auto;
+    }
+    &.col-num-7{
+        grid-template-columns:auto auto auto auto auto auto auto;
+    }
+    &.col-num-8{
+        grid-template-columns:auto auto auto auto auto auto auto auto;
+    }
+    &.col-gap-p2{
+        grid-column-gap:0.2em;
+    }
+    &.col-gap-p5{
+        grid-column-gap:0.5em;
+    }
+    &.col-gap-1{
+        grid-column-gap:1em;
+    }
+    &.col-gap-2{
+        grid-column-gap:2em;
+    }
+    &.col-gap-3{
+        grid-column-gap:3em;
+    }
+    &.row-gap-p2{
+        grid-row-gap:0.2em;
+    }
+    &.row-gap-p5{
+        grid-row-gap:0.5em;
+    }
+    &.row-gap-1{
+        grid-row-gap:1em;
+    }
+    &.row-gap-2{
+        grid-row-gap:2em;
+    }
+    &.row-gap-3{
+        grid-row-gap:3em;
+    }
+}
+
+.grid-heading{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-cell{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.login-form{
+    color:$login-window-font-color;
+    background-color: $login-window-color;
+    &.title{
+        font-size:1.3em;
+    }
+    &.lbl{
+        font-size:1.2em;
+        width:6em;
+    }
+    &.ipt{
+        font-size:1.2em;
+        width:10em;
+        padding-left:0.5em;
+        background-color: $login-input-box-color;
+        border:solid 2px $login-window-color;
+        &:hover{
+            background-color: $login-input-box-active-color;
+        }
+        &:focus{
+            background-color: $login-input-box-active-color;
+            outline: solid 2px $login-input-box-border-color;
+        }
+    }
+    &.btn{
+        font-size:1em;
+        font-weight: 500;
+        color:$login-button-font-color;
+        background-color: $login-button-color;
+        border:solid 1px $login-button-color;
+        width:5.5em;
+        padding-top:0.4em;
+        padding-bottom: 0.4em;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        &:hover{
+            outline: solid 1px $login-button-border-color;
+            border:solid 1px $login-button-border-color;
+        }
+        &:focus{
+            outline: solid 1px $login-button-border-color;
+            border:solid 1px $login-button-border-color;
+        }
+        &:active{
+            outline: solid 1px $login-button-border-color;
+            border:solid 1px $login-button-border-color;
+        }
+    }
+    &.window{
+        width: 25em;
+        height: 15em;
+    }
+}
+
+
+
+#nav
+{
+    padding:0.2em;
+    height:3em;
+}
+
+.nav-link {
+    padding-right:0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+    background-color: $login-window-color;
+    color: $login-window-font-color;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border: $login-window-font-color 0.2em ridge;
+}
+
+#view{
+    height:calc(100%-3em);
+    padding:0.2em;
+    border-top: $login-button-border-color solid 1px;
+    border-bottom: $login-button-border-color solid 1px;
+}
+
+#list{
+    width:100%;
+}
+
+#search {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    label {
+        padding-right: 2em;
+        color: $login-window-color;
+    }
+    input {
+        padding-right: 10em;
+        background-color: $login-input-box-active-color;
+    }
+}
